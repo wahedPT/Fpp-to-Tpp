@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Shoot()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
             muzzleflashPrefab.SetActive(true);
             Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
